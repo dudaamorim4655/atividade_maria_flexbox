@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0d;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background-color: #080809;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #b30000;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+
+    background-color: #a00000;
+    color: white;
+
+    padding: 14px 30px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #d00000;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 10%;
+
+    background-color: #111114;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+    color: #c00000;
+}
+
+.sobre-texto p {
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   PERSONAGENS
+========================= */
+
+.personagens {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.personagens h2 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+
+    color: #c00000;
+}
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #17171b;
+
+    width: 250px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 30px rgba(150, 0, 0, 0.4);
+}
+
+.card img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #c00000;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+.card p {
+    color: #ccc;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TEMPORADAS
+========================= */
+
+.temporadas {
+    background-color: #111114;
+
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+.temporadas h2 {
+    color: #c00000;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+.temporadas-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.temporada {
+    background-color: #1b1b20;
+
+    width: 220px;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.temporada:hover {
+    transform: translateY(-8px);
+
+    background-color: #24242a;
+}
+
+.temporada span {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #a00000;
+}
+
+.temporada h3 {
+    margin: 15px 0;
+
+    font-size: 20px;
+}
+
+.temporada p {
+    color: #ccc;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FRASE
+========================= */
+
+.frase {
+    min-height: 350px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.8)
+        ),
+        url("img/mystic-falls.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.frase h2 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.frase p {
+    font-size: 20px;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #070708;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #c00000;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #888;
+
+    margin: 5px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre-texto h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .temporadas-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
